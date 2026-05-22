@@ -213,11 +213,17 @@ h1 {
   font-size: 0.94rem;
 }
 
+.repo-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
 .repo-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 18px;
   min-height: 44px;
   padding: 0 16px;
   border-radius: 999px;
@@ -225,6 +231,12 @@ h1 {
   color: #f8f4ea;
   text-decoration: none;
   font-weight: 600;
+}
+
+.repo-link-secondary {
+  background: rgba(255, 255, 255, 0.88);
+  color: #163b39;
+  border: 1px solid rgba(20, 44, 42, 0.12);
 }
 
 .info-panel {
