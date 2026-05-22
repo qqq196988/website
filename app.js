@@ -61,8 +61,8 @@ const createChart = () => {
         {
           label: "POC flux",
           data: [],
-          borderColor: "#0f5e5a",
-          backgroundColor: "rgba(15, 94, 90, 0.16)",
+          borderColor: "#111111",
+          backgroundColor: "rgba(17, 17, 17, 0.12)",
           pointRadius: 2,
           pointHoverRadius: 4,
           borderWidth: 2,

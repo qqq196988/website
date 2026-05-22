@@ -50,6 +50,7 @@ body {
 .hero-copy {
   padding: 28px 30px;
   border-radius: 28px;
+  width: 100%;
 }
 
 .eyebrow,
@@ -75,7 +76,7 @@ h3 {
 h1 {
   margin-top: 10px;
   font-size: clamp(2.4rem, 5vw, 4.6rem);
-  max-width: 18ch;
+  max-width: none;
 }
 
 .lede {
