@@ -51,6 +51,8 @@ body {
   padding: 28px 30px;
   border-radius: 28px;
   width: 100%;
+  display: grid;
+  align-content: start;
 }
 
 .eyebrow,
@@ -81,7 +83,8 @@ h1 {
 
 .lede {
   margin: 16px 0 0;
-  max-width: 64ch;
+  max-width: none;
+  width: 100%;
   line-height: 1.6;
   color: var(--ink-soft);
 }
