@@ -166,6 +166,67 @@ h1 {
   margin: 12px 2px 2px;
 }
 
+.repo-callout {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top right, rgba(216, 184, 102, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(15, 94, 90, 0.08), rgba(255, 255, 255, 0.86));
+  border: 1px solid rgba(20, 44, 42, 0.08);
+}
+
+.repo-callout h3 {
+  margin-top: 8px;
+  font-size: 1.55rem;
+}
+
+.repo-callout p {
+  margin: 10px 0 0;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.repo-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.repo-pill {
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(20, 44, 42, 0.06);
+}
+
+.repo-pill strong {
+  font-size: 0.96rem;
+}
+
+.repo-pill span {
+  color: var(--ink-soft);
+  line-height: 1.45;
+  font-size: 0.94rem;
+}
+
+.repo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: #163b39;
+  color: #f8f4ea;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .info-panel {
   border-radius: 30px;
   padding: 18px;
@@ -286,6 +347,10 @@ h1 {
   }
 
   .hero-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .repo-highlights {
     grid-template-columns: 1fr;
   }
 
