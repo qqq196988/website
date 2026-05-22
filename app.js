@@ -36,8 +36,8 @@ const formatSlope = (value) => {
 };
 
 const trendColor = (trend) => {
-  if (trend === "increasing") return "#1b7f79";
-  if (trend === "decreasing") return "#c46b3d";
+  if (trend === "increasing") return "#c46b3d";
+  if (trend === "decreasing") return "#1b7f79";
   return "#576f68";
 };
 
@@ -193,10 +193,15 @@ const updateMetrics = (props, series) => {
 };
 
 const updateChart = (series) => {
+  const values = series.values.map((value) => (value == null ? null : Number(value)));
+  const validValues = values.filter((value) => value != null && Number.isFinite(value));
+  const maxValue = validValues.length ? Math.max(...validValues) : 0;
+  const yMax = maxValue > 0 ? maxValue * 1.1 : 1;
+
   state.chart.data.labels = series.years;
-  state.chart.data.datasets[0].data = series.values.map((value) =>
-    value == null ? null : Number(value)
-  );
+  state.chart.data.datasets[0].data = values;
+  state.chart.options.scales.y.min = 0;
+  state.chart.options.scales.y.max = yMax;
   state.chart.update();
 };
 

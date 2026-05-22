@@ -32,9 +32,8 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
-  align-items: end;
   margin-bottom: 24px;
 }
 
@@ -76,7 +75,7 @@ h3 {
 h1 {
   margin-top: 10px;
   font-size: clamp(2.4rem, 5vw, 4.6rem);
-  max-width: 14ch;
+  max-width: 18ch;
 }
 
 .lede {
@@ -90,6 +89,7 @@ h1 {
   border-radius: 28px;
   padding: 20px;
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -218,6 +218,19 @@ h1 {
   font-size: 1.2rem;
 }
 
+.chart-frame {
+  position: relative;
+  height: 260px;
+  max-height: 260px;
+  width: 100%;
+}
+
+#timeseries-chart {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
 .detail-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -264,8 +277,11 @@ h1 {
 }
 
 @media (max-width: 1100px) {
-  .hero,
   .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-meta {
     grid-template-columns: 1fr;
   }
 
