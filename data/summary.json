@@ -1,0 +1,21 @@
+{
+  "river_count": 2409,
+  "year_range": [
+    1984,
+    2018
+  ],
+  "trends": {
+    "decreasing": 338,
+    "no trend": 1287,
+    "increasing": 784
+  },
+  "continents": {
+    "South America": 209,
+    "Africa": 204,
+    "Asia": 1044,
+    "North America": 490,
+    "Europe": 285,
+    "Oceania": 177
+  },
+  "timeseries_count": 2409
+}
